@@ -81,4 +81,4 @@ luhn a b c d =
     then True
     else False
   where
-    sum = a + b + c + d
+    sum = luhnDouble b + luhnDouble c + luhnDouble d
